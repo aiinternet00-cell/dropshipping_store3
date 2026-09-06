@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="NUVIO — два продуманных товара и выгодный комплект.">
+  <title>NUVIO — вещи, которые работают вместе</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header"><a class="logo" href="#top" aria-label="NUVIO, на главную">NUVIO<span>.</span></a>
+    <nav class="desktop-nav" aria-label="Основная навигация"><a href="#top">Главная</a><a href="#products">Товары</a><a href="#set">Набор</a><a href="#faq">FAQ</a></nav>
+    <div class="header-actions"><button class="cart-button" data-open-cart aria-label="Открыть корзину">Корзина <b data-cart-count>0</b></button><button class="menu-button" aria-label="Открыть меню" aria-expanded="false">☰</button></div>
+  </header>
+  <nav class="mobile-nav" aria-label="Мобильная навигация"><a href="#top">Главная</a><a href="#products">Товары</a><a href="#set">Набор</a><a href="#faq">FAQ</a></nav>
+  <main id="top">
+    <section class="hero section"><div class="hero-copy"><span class="eyebrow">ДВА ПРЕДМЕТА · ОДНА ИДЕЯ</span><h1>Меньше лишнего.<br><em>Больше пользы.</em></h1><p>NUVIO собирает компактную коллекцию из двух вещей. Выберите одну или заберите комплект — вместе выгоднее.</p><div class="hero-actions"><a class="button dark" href="#products">Смотреть товары</a><a class="button light" href="#set">Забрать набор <span>↗</span></a></div><div class="trust"><span>✓ Быстрая отправка</span><span>✓ Безопасная оплата</span><span>✓ Отслеживание заказа</span></div></div>
+      <div class="hero-visual"><div class="orb"></div><img src="assets/product-1.svg" alt="Место для фотографии первого товара"><img src="assets/product-2.svg" alt="Место для фотографии второго товара"><span class="hero-note">NUVIO SET<br><b>выгоднее вместе</b></span></div>
+    </section>
+    <section class="statement section"><p>01 / КОЛЛЕКЦИЯ</p><h2>Только нужное.<br>Ничего случайного.</h2><p>Мы сознательно оставили два товара — чтобы выбирать было легко.</p></section>
+    <section id="products" class="products section"><div class="section-heading"><div><span class="eyebrow">КОЛЛЕКЦИЯ 01</span><h2>Выберите свой вариант</h2></div><p>Каждый товар можно купить отдельно.<br>Все цены собраны в одном месте.</p></div><div id="product-grid" class="product-grid"></div></section>
+    <section id="set" class="set-section section"><div class="set-copy"><span class="eyebrow light-text">NUVIO SET · ЛУЧШАЯ ЦЕНА</span><h2>Два лучше,<br>чем один.</h2><p>Заберите оба товара вместе и заплатите меньше.</p><div class="set-price"><span data-set-old></span><strong data-set-price></strong></div><div class="saving" data-set-saving></div><button class="button cream" data-add-set>Забрать набор <span>→</span></button></div><div class="set-art"><img src="assets/product-1.svg" alt="Первый товар в наборе"><span>+</span><img src="assets/product-2.svg" alt="Второй товар в наборе"></div><div class="set-breakdown" id="set-breakdown"></div></section>
+    <section class="why section"><div><span class="eyebrow">ПОЧЕМУ NUVIO</span><h2>Покупка без<br>лишних сомнений.</h2></div><div class="benefits"><article><b>01</b><h3>Понятный выбор</h3><p>Всего два товара и один выгодный набор. Сравнить можно за минуту.</p></article><article><b>02</b><h3>Честная информация</h3><p>Мы не публикуем неподтверждённые характеристики и обещания.</p></article><article><b>03</b><h3>Всё под контролем</h3><p>После отправки вы получите данные для отслеживания заказа.</p></article></div></section>
+    <section id="faq" class="faq section"><div><span class="eyebrow">ОТВЕЧАЕМ КОРОТКО</span><h2>FAQ</h2></div><div class="accordions"><details><summary>Почему в магазине только два товара?<span>+</span></summary><p>Это принцип NUVIO: небольшая, понятная коллекция без бесконечного каталога.</p></details><details><summary>Чем выгоден NUVIO SET?<span>+</span></summary><p>В набор входят оба товара, а итоговая цена ниже их стоимости по отдельности. Точная экономия показана в блоке набора.</p></details><details><summary>Как узнать статус заказа?<span>+</span></summary><p>После отправки заказа мы передадим данные для его отслеживания.</p></details></div></section>
+  </main>
+  <footer><a class="logo inverse" href="#top">NUVIO<span>.</span></a><p>Два предмета. Одна идея.</p><nav><a href="#products">Товары</a><a href="#set">Набор</a><a href="#faq">FAQ</a></nav><small>© 2026 NUVIO</small></footer>
+  <div class="cart-overlay" data-cart-overlay></div><aside class="cart" data-cart aria-label="Корзина"><div class="cart-head"><h2>Корзина <sup data-cart-count>0</sup></h2><button data-close-cart aria-label="Закрыть">×</button></div><div data-cart-items class="cart-items"></div><div class="cart-footer"><div><span>Итого</span><strong data-cart-total>0 ₽</strong></div><button class="button dark wide" data-checkout>Оформить заказ</button><small>Стоимость доставки рассчитывается отдельно.</small></div></aside>
+  <div class="toast" data-toast>Добавлено в корзину</div>
+  <script type="module" src="app.js"></script>
+</body></html>
